@@ -1,0 +1,14 @@
+body{
+    background-color: #F6F8FF;
+    overflow: hidden;
+}
+
+.main{
+    display: grid;
+    grid-template-columns:270px 1fr;
+
+}
+
+$main-color:#5627FF;
+
+@import "_menu.scss";

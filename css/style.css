@@ -1,0 +1,21 @@
+body {
+  background-color: #F6F8FF;
+  overflow: hidden;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  background-color: #5627FF;
+  height: 100vh;
+}
+
+.menu__header {
+  border-bottom: 1px solid white;
+  margin: 0  20px;
+}

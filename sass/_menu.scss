@@ -1,0 +1,11 @@
+.menu{
+    display: grid;
+    grid-template-rows: 70px 1fr;
+    background-color: $main-color;
+    height: 100vh;
+
+    &__header{
+        border-bottom: 1px solid white;
+            margin: 0  20px;
+    }
+}
