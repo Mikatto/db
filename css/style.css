@@ -76,11 +76,20 @@ body {
 
 .third-party {
   place-self: end stretch;
-  padding: 24px 0;
+  padding: 12px 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
 .third-party-item {
   line-height: 48px;
+}
+.third-party-item::before {
+  background-image: url("../images/GD.svg");
+}
+.third-party-item-db {
+  line-height: 48px;
+}
+.third-party-item-db::before {
+  background-image: url("../images/DB.svg");
 }
 
 /*# sourceMappingURL=style.css.map */
