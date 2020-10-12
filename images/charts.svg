@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>nav/icon copy 2</title>
+    <defs>
+        <path d="M10.8,0 L10.8,24 C4.716,23.4 0,18.252 0,12 C0,5.748 4.716,0.6 10.8,0 Z M24,13.212 C23.436,18.9 18.924,23.436 13.236,24 L13.236,24 L13.236,13.212 Z M13.236,4.4408921e-15 C18.912,0.564 23.436,5.1 24,10.788 L24,10.788 L13.236,10.788 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-20.000000, -246.000000)">
+            <g id="color/light-orange" transform="translate(20.000000, 246.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#111111" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(-2.400000, -2.400000)" id="color/white" fill="#DBE5FF">
+                        <rect id="Rectangle-Copy-2" x="0" y="0" width="28.8" height="28.8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

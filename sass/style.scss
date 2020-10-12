@@ -6,9 +6,10 @@ body{
 .main{
     display: grid;
     grid-template-columns:270px 1fr;
-
 }
 
+$lato: 'Lato', sans-serif;
 $main-color:#5627FF;
+$image:"../images/";
 
 @import "_menu.scss";

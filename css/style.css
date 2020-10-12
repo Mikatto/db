@@ -16,6 +16,37 @@ body {
 }
 
 .menu__header {
+  display: flex;
+  flex-flow: row wrap;
   border-bottom: 1px solid white;
-  margin: 0  20px;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.menu__header-logo {
+  width: 27px;
+  height: 27px;
+  background-image: url("../images/mikatto-logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.menu__items {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 24px 20px 0 20px;
+}
+
+.menu__items-item {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  line-height: 64px;
+}
+
+.menu__items-icon {
+  width: 24px;
+  height: 24px;
 }

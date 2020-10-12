@@ -5,7 +5,46 @@
     height: 100vh;
 
     &__header{
+        display: flex;
+        flex-flow: row wrap;
         border-bottom: 1px solid white;
-            margin: 0  20px;
+        align-items: center;
+        margin: 0 20px;
+
+        &-logo{
+            width: 27px;
+            height: 27px;
+            background-image: url($image+'mikatto-logo.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    &__items{
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 24px 20px 0 20px;
+
+        &-item{
+            font-family: $lato;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+            line-height: 64px;
+
+            // &::before{
+            //     content: '';
+            //     height: 24px;
+            //     width: 24px;
+            //     background-color: #000;
+            //     mask-image: url($image+'dashboard.svg');
+            // }
+        }
+
+        &-icon{
+            width: 24px;
+            height: 24px;
+        }
     }
 }
