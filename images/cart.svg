@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <defs>
+        <path d="M19.21,11.98 L14.83,5.42 C14.64,5.14 14.32,5 14,5 C13.68,5 13.36,5.14 13.17,5.43 L8.79,11.98 L4,11.98 C3.45,11.98 3,12.43 3,12.98 C3,13.07 3.01,13.16 3.04,13.25 L5.58,22.52 C5.81,23.36 6.58,23.98 7.5,23.98 L20.5,23.98 C21.42,23.98 22.19,23.36 22.43,22.52 L24.97,13.25 L25,12.98 C25,12.43 24.55,11.98 24,11.98 L19.21,11.98 Z M11,11.98 L14,7.58 L17,11.98 L11,11.98 Z M14,19.98 C12.9,19.98 12,19.08 12,17.98 C12,16.88 12.9,15.98 14,15.98 C15.1,15.98 16,16.88 16,17.98 C16,19.08 15.1,19.98 14,19.98 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="symbol/basket" transform="translate(-3.000000, -5.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Shape" fill="#5627FF" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
