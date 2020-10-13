@@ -8,21 +8,10 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        justify-content: space-between;
     }
 }
 
-.header__search{
-    width: 281px;
-    padding: 0 25px 0 42px;
-    border-radius: 21px;
-    border: none;
-    height: 42px;
-    outline: none;
-
-    &:focus{
-        box-shadow: 0 0 0 1px $main-color;
-    }
-}
 
 .search-form{
     position: relative;
@@ -38,5 +27,90 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+    }
+
+    &__style{
+        width: 281px;
+        padding: 0 25px 0 42px;
+        border-radius: 21px;
+        border: none;
+        height: 42px;
+        outline: none;
+
+        &:focus{
+            box-shadow: 0 0 0 1px $main-color;
+        }
+    }
+}
+
+.nav-control{
+    display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+
+    &__item{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0px 7px 7px -8px rgba(0,0,0,0.62);
+        margin-right: 20px;
+        position: relative;
+
+        &:hover{
+            box-shadow: 0px 10px 13px -8px rgba(0,0,0,0.62);
+        }
+    }
+
+    .notif{
+        &::before{
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 2px;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: #F2235F;
+        }
+    }
+
+
+    &__profile{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 6px;
+
+        &:focus{
+            background-color: #e7eefc;
+            border-radius: 6px;
+            outline: none;
+        }
+        
+        &-avatar{
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: url($image+'avatar.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border: 1px solid $main-color;
+            margin-right: 12px;
+        }
+
+        &-name{
+            font-family: $lato;
+            color: #697898;
+        }
+
+        &:hover{
+            background-color: #e7eefc;
+            border-radius: 6px;
+        }
     }
 }
