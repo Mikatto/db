@@ -5,12 +5,16 @@ body {
   grid-template-columns: 270px 1fr;
 }
 
+@media (max-width: 994px) {
+  body {
+    grid-template-columns: 70px 1fr;
+  }
+}
 .menu {
   display: grid;
   grid-template-rows: 70px 1fr 1fr;
   background-color: #5627FF;
   height: 100vh;
-  transform: translateX(0);
 }
 .menu__header {
   display: flex;
@@ -91,9 +95,27 @@ body {
   background-image: url("../images/DB.svg");
 }
 
-.main {
-  display: grid;
-  grid-template-rows: 70px 1fr;
+.menu-min {
+  display: none;
+}
+
+@media (max-width: 994px) {
+  .menu {
+    display: none;
+  }
+  .menu-min {
+    display: grid;
+  }
+  .menu__items-item {
+    padding: 0 23px;
+  }
+  .menu__items-item::before {
+    margin: 20px 0;
+  }
+
+  .third-party {
+    padding: 0;
+  }
 }
 .main__header {
   border-bottom: 1px solid #5627FF;
@@ -102,10 +124,13 @@ body {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 7px 0;
 }
 
 .search-form {
   position: relative;
+  margin-right: 20px;
+  flex-grow: 1;
 }
 .search-form::before {
   content: "";
@@ -144,9 +169,24 @@ body {
   box-shadow: 0px 7px 7px -8px rgba(0, 0, 0, 0.62);
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-control__item:hover {
   box-shadow: 0px 10px 13px -8px rgba(0, 0, 0, 0.62);
+}
+.nav-control__icon {
+  background-image: url("../images/mail.svg");
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.nav-control__icon-notif {
+  background-image: url("../images/notif.svg");
 }
 .nav-control .notif::before {
   content: "";
@@ -186,10 +226,15 @@ body {
 .nav-control__profile-name {
   font-family: "Lato", sans-serif;
   color: #697898;
+  margin-right: 8px;
 }
-.nav-control__profile:hover {
-  background-color: #e7eefc;
-  border-radius: 6px;
+.nav-control__profile::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #697898 transparent transparent transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

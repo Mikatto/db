@@ -3,7 +3,6 @@
     grid-template-rows: 70px 1fr 1fr;
     background-color: $main-color;
     height: 100vh;
-    transform: translateX(0);
 
     &__header{
         display: flex;
@@ -101,5 +100,31 @@
                 background-image: url($image+'DB.svg');
             }
         }
+    }
+}
+
+.menu-min{
+    display: none;
+}
+
+@media (max-width: 994px) {
+    .menu{
+        display: none;
+        &-min{
+            display: grid;
+        }
+
+        &__items{
+            &-item{
+                padding:0 23px;
+                &::before{
+                    margin: 20px 0;
+                }
+            }
+        }
+    }
+
+    .third-party{
+        padding:0;
     }
 }
