@@ -1,14 +1,17 @@
 .main{
-    
+    display: grid;
+    grid-template-rows: 70px 1fr;
 
     &__header{
         border-bottom: 1px solid $main-color;
-        margin: 0 20px;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
-        padding: 7px 0;
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+        background-color: #F6F8FF;
     }
 }
 
@@ -32,12 +35,12 @@
     }
 
     &__style{
-        width: 281px;
         padding: 0 25px 0 42px;
         border-radius: 21px;
         border: none;
         height: 42px;
         outline: none;
+        width: -webkit-fill-available;
 
         &:focus{
             box-shadow: 0 0 0 1px $main-color;
@@ -63,6 +66,10 @@
         justify-content: center;
         align-items: center;
 
+        &:first-child{
+            display: none;
+        }
+
         &:hover{
             box-shadow: 0px 10px 13px -8px rgba(0,0,0,0.62);
         }
@@ -75,9 +82,14 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        margin: 12px;
 
         &-notif{
             background-image: url($image+'notif.svg');
+        }
+
+        &-search{
+            background-image: url($image+'search.svg');
         }
     }
 
@@ -135,6 +147,51 @@
             border-style: solid;
             border-width: 5px 5px 0 5px;
             border-color: #697898 transparent transparent transparent;
+        }
+    }
+}
+
+@media (max-width: 766px) {
+    .main{
+        &__header{
+            top: 70px;
+        }
+    }
+}
+
+@media (max-width: 559px) {
+    .nav-control{
+        &__icon{
+            &-search{
+                &:focus-within .search-form{
+                    display: flex;    
+                }
+            }
+        }
+
+        &__item{
+            &:first-child{
+                display: flex;
+            }
+        }
+    }
+        .main{
+            &__header{
+                
+            .search-form{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 389px) {
+
+    .nav-control{
+        &__profile{
+            &-name{
+                display: none;
+            }
         }
     }
 }

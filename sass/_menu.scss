@@ -1,3 +1,10 @@
+.nav-wrap{
+    position: relative;
+}
+.nav{
+    position: sticky;
+    top: 0;
+}
 .menu{
     display: grid;
     grid-template-rows: 70px 1fr 1fr;
@@ -9,7 +16,7 @@
         flex-flow: row wrap;
         border-bottom: 1px solid white;
         align-items: center;
-        margin: 0 20px;
+        padding: 0 20px;
 
         &-logo{
             width: 27px;
@@ -105,6 +112,10 @@
 
 .menu-min{
     display: none;
+
+    &__burger{
+        display: none;
+    }
 }
 
 @media (max-width: 994px) {
@@ -117,6 +128,7 @@
         &__items{
             &-item{
                 padding:0 23px;
+
                 &::before{
                     margin: 20px 0;
                 }
@@ -126,5 +138,50 @@
 
     .third-party{
         padding:0;
+    }
+}
+
+@media (max-width: 766px) {
+    .nav-wrap{
+        position: sticky;
+        top: 0;
+    }
+
+    .menu{
+        &__header{
+            justify-content: space-between;
+            border-bottom: unset;
+            
+        }
+
+        &-min{
+            grid-template-rows: 70px;
+            height: unset;
+
+            &__burger{
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+
+                &-line{
+                    width: 24px;
+                    height: 2px;
+                    background-color: white;
+                    margin-bottom: 6px;
+
+                    &:last-child{
+                    margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &__items{
+            display: none;
+        }
+    }
+
+    .third-party{
+        display: none;
     }
 }

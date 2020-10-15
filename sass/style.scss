@@ -1,8 +1,9 @@
 body{
     background-color: #F6F8FF;
-    overflow: hidden;
+    // overflow: hidden;
     display: grid;
     grid-template-columns:270px 1fr;
+    min-width: 320px;
 }
 
 @media (max-width: 994px){
@@ -12,10 +13,17 @@ body{
     }
 }
 
+@media (max-width: 766px) {
+    body{
+        grid-template-columns:unset;
+        grid-template-rows: 70px 1fr;
+    }
+}
 
 $lato: 'Lato', sans-serif;
 $main-color:#5627FF;
 $image:"../images/";
 
+@import "_cards.scss";
 @import "_menu.scss";
 @import "_content.scss";
