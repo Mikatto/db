@@ -1,13 +1,97 @@
 .main{
     &__info{
         padding: 42px 20px 20px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(320px, 1fr));
+        align-items: self-start;
+        align-self: start;
+        gap: 20px;
     }
 }
 
 .card{
-    width: 100px;
-    height: 100px;
+    // width: 360px;
+    height: 160px;
     background-color: white;
     padding: 24px;
-    border: 1px solid black;
+    box-shadow: 0px 9px 10px -6px rgba(0,0,0,0.47);
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+    &-title{
+        font-weight: 700;
+        color: #697898;
+    }
+
+    &-numbers{
+        color: #697898;
+        font-size: 28px;
+        font-weight: 900;
+    }
+
+    &-count-up{
+        color: #22DA89;
+        font-size: 26px;
+        font-weight: 700;
+        margin-right: 10px;
+        display: flex;
+
+        &::before{
+            content: '';
+            background-image: url($image+'arrow-up.svg');
+            width: 20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 10px;
+            align-self: center;
+            
+        }
+    }
+
+    &__small{
+        &-header{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            height: 66px;
+
+            &-icon{
+                width: 66px;
+                height: 66px;
+                background-color: #DBE5FF;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::before{
+                    content: '';
+                    background-image: url($image+'arrow45.svg');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        &-footer{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+            color: #697898;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+
+
+
+    &__med{
+        
+    }
 }
