@@ -2,16 +2,17 @@
     &__info{
         padding: 42px 20px 20px 20px;
         display: grid;
-        grid-template-columns: repeat(3, minmax(320px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         align-items: self-start;
         align-self: start;
         gap: 20px;
+        max-width: 1127px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 .card{
-    // width: 360px;
-    height: 160px;
     background-color: white;
     padding: 24px;
     box-shadow: 0px 9px 10px -6px rgba(0,0,0,0.47);
@@ -29,25 +30,36 @@
         color: #697898;
         font-size: 28px;
         font-weight: 900;
+        margin-bottom: 18px;
     }
 
-    &-count-up{
-        color: #22DA89;
-        font-size: 26px;
-        font-weight: 700;
-        margin-right: 10px;
-        display: flex;
+    &-count{
 
-        &::before{
-            content: '';
-            background-image: url($image+'arrow-up.svg');
-            width: 20px;
-            height: 20px;
-            background-repeat: no-repeat;
-            background-position: center;
+        &-up{
+            color: #22DA89;
+            font-size: 26px;
+            font-weight: 700;
             margin-right: 10px;
-            align-self: center;
-            
+            display: flex;
+
+            &::before{
+                content: '';
+                background-image: url($image+'arrow-up.svg');
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 10px;
+                align-self: center;
+            }
+        }   
+
+        &-down{
+            color: #F2235F;
+
+            &::before{
+                background-image: url($image+'arrow-down.svg');
+            }
         }
     }
 
@@ -57,6 +69,7 @@
             flex-flow: row nowrap;
             justify-content: space-between;
             height: 66px;
+            margin-bottom: 18px;
 
             &-icon{
                 width: 66px;
@@ -72,8 +85,21 @@
                     background-image: url($image+'arrow45.svg');
                     background-repeat: no-repeat;
                     background-size: contain;
+                    background-position: center;
                     width: 24px;
                     height: 24px;
+                }
+
+                &-purchase{
+                    &::before{
+                        background-image: url($image+'cart.svg');
+                    }
+                }
+
+                &-order{
+                    &::before{
+                        background-image: url($image+'flag.svg');
+                    }
                 }
             }
         }
@@ -88,10 +114,17 @@
         }
     }
 
+    &__medium{
 
+    }
+}
 
-
-    &__med{
-        
+@media (max-width: 1310px) {
+    .main{
+    &__info{
+        max-width: unset;
+        margin-left: unset;
+        margin-right: unset;
+        }
     }
 }

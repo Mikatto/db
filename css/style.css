@@ -22,14 +22,16 @@ body {
 .main__info {
   padding: 42px 20px 20px 20px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   align-items: self-start;
   align-self: start;
   gap: 20px;
+  max-width: 1127px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
-  height: 160px;
   background-color: white;
   padding: 24px;
   box-shadow: 0px 9px 10px -6px rgba(0, 0, 0, 0.47);
@@ -46,6 +48,7 @@ body {
   color: #697898;
   font-size: 28px;
   font-weight: 900;
+  margin-bottom: 18px;
 }
 .card-count-up {
   color: #22DA89;
@@ -64,11 +67,18 @@ body {
   margin-right: 10px;
   align-self: center;
 }
+.card-count-down {
+  color: #F2235F;
+}
+.card-count-down::before {
+  background-image: url("../images/arrow-down.svg");
+}
 .card__small-header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   height: 66px;
+  margin-bottom: 18px;
 }
 .card__small-header-icon {
   width: 66px;
@@ -84,8 +94,15 @@ body {
   background-image: url("../images/arrow45.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   width: 24px;
   height: 24px;
+}
+.card__small-header-icon-purchase::before {
+  background-image: url("../images/cart.svg");
+}
+.card__small-header-icon-order::before {
+  background-image: url("../images/flag.svg");
 }
 .card__small-footer {
   display: flex;
@@ -94,6 +111,13 @@ body {
   color: #697898;
   font-size: 16px;
   font-weight: 400;
+}
+@media (max-width: 1310px) {
+  .main__info {
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
 }
 .nav-wrap {
   position: relative;

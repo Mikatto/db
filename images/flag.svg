@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="24px" viewBox="0 0 19 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>symbol/arrow-45'</title>
+    <defs>
+        <path d="M16,0 L2.66666667,0 C1.19333333,0 0.0133333333,1.19333333 0.0133333333,2.66666667 L0,24 L9.33333333,20 L18.6666667,24 L18.6666667,2.66666667 C18.6666667,1.19333333 17.4733333,0 16,0 Z M16,20 L9.33333333,17.1 L2.66666667,20 L2.66666667,2.66666667 L16,2.66666667 L16,20 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1345.000000, -162.000000)">
+            <g id="Group" transform="translate(1340.000000, 160.000000)">
+                <g id="color/brown" transform="translate(5.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#C9916E" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)">
+                        <g transform="translate(-5.000000, -2.000000)" id="color/white" fill="#5627FF">
+                            <rect id="Rectangle-Copy-2" x="0" y="0" width="28" height="28"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
