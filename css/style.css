@@ -50,6 +50,20 @@ body {
   font-weight: 900;
   margin-bottom: 18px;
 }
+.card-time {
+  color: rgba(105, 120, 152, 0.72);
+  font-size: 16px;
+  font-weight: 400;
+}
+.card__applink {
+  color: #5627FF;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  align-self: flex-end;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
 .card-count-up {
   color: #22DA89;
   font-size: 26px;
@@ -112,6 +126,46 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+.card__medium {
+  padding: 0;
+  grid-row-start: span 2;
+}
+.card__medium-title {
+  font-weight: 700;
+  color: #697898;
+  padding: 24px 0 30px 24px;
+}
+
+.overview-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px 14px 24px;
+  margin-bottom: 20px;
+}
+.overview-tab__name {
+  color: #697898;
+  font-size: 16px;
+  font-weight: 900;
+}
+.overview-tab__count {
+  color: #697898;
+  font-size: 16px;
+  font-weight: 700;
+}
+.overview-tab:hover {
+  background-color: #5627FF;
+}
+.overview-tab:hover .overview-tab__thing {
+  color: white;
+}
+.overview-tab:hover .card-time {
+  color: rgba(255, 255, 255, 0.72);
+}
+.overview-tab:hover .overview-tab__count {
+  color: white;
+}
+
 @media (max-width: 1310px) {
   .main__info {
     max-width: unset;
