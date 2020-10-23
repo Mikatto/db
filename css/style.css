@@ -61,8 +61,50 @@ body {
   font-weight: 400;
   font-size: 16px;
   align-self: flex-end;
-  padding-right: 24px;
-  padding-bottom: 24px;
+}
+.card__header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.card__header-nav-wrap {
+  margin-bottom: 0;
+}
+.card__sliderbtn {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #DBE5FF;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.card__sliderbtn:hover {
+  background-color: #c5d6ff;
+}
+.card__sliderbtn-left {
+  margin-right: 10px;
+}
+.card__sliderbtn-left::before {
+  content: "";
+  background-image: url("../images/arrow-left.svg");
+  width: 8px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card__sliderbtn-right::before {
+  content: "";
+  background-image: url("../images/arrow-right.svg");
+  width: 8px;
+  height: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .card-count-up {
   color: #22DA89;
@@ -127,13 +169,15 @@ body {
   font-weight: 400;
 }
 .card__medium {
-  padding: 0;
   grid-row-start: span 2;
+  height: 430px;
+}
+.card__medium .activity:nth-last-child(2) {
+  border-bottom: none;
 }
 .card__medium-title {
   font-weight: 700;
   color: #697898;
-  padding: 24px 0 30px 24px;
 }
 
 .overview-tab {
@@ -166,6 +210,35 @@ body {
   color: white;
 }
 
+.activity {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #c5d6ff;
+}
+.activity__schedule {
+  margin-right: 32px;
+}
+.activity__title {
+  color: black;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+.activity__title-done {
+  color: #697898;
+}
+.activity__field {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.72);
+  margin-bottom: 6px;
+}
+.activity__field-done {
+  color: #697898;
+}
+
 @media (max-width: 1310px) {
   .main__info {
     max-width: unset;
@@ -187,6 +260,8 @@ body {
   grid-template-rows: 70px 1fr 1fr;
   background-color: #5627FF;
   height: 100vh;
+  position: sticky;
+  top: 0;
 }
 .menu__header {
   display: flex;

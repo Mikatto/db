@@ -45,8 +45,65 @@
         font-weight: 400;
         font-size: 16px;
         align-self: flex-end;
-        padding-right: 24px;
-        padding-bottom: 24px;
+    }
+
+    &__header{
+
+        &-nav{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+
+            &-wrap{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__sliderbtn{
+        display: flex;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #DBE5FF;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            background-color: #c5d6ff;
+        }
+
+        &-left{
+            margin-right: 10px;
+
+            &::before{
+                content: '';
+                
+                background-image: url($image+'arrow-left.svg');
+                width: 8px;
+                height: 20px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &-right{
+
+            &::before{
+                content: '';
+                
+                background-image: url($image+'arrow-right.svg');
+                width: 8px;
+                height: 20px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
     }
     
     &-count{
@@ -131,13 +188,17 @@
     }
 
     &__medium{
-        padding: 0;
         grid-row-start: span 2;
-        
+        height: 430px;
+        .activity{
+            &:nth-last-child(2){
+                border-bottom: none;
+            }
+        }
+
         &-title{
             font-weight: 700;
             color: #697898;
-            padding:24px 0 30px 24px;
         }
     }
 }
@@ -178,6 +239,41 @@
     }
 }
 
+.activity{
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #c5d6ff;
+
+    &__schedule{
+        margin-right: 32px;
+    }
+
+    &__title{
+        color: black;
+        font-size: 16px;
+        font-weight: 900;
+        margin-bottom: 6px;
+
+        &-done{
+            color: #697898;
+        }
+    }
+
+    &__field{
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.72);
+        margin-bottom: 6px;
+
+        &-done{
+                color: #697898;
+            }
+        
+    }
+
+}
 
 @media (max-width: 1310px) {
     .main{
