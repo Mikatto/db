@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
+  overflow: hidden;
 }
 .card-title {
   font-weight: 700;
@@ -179,13 +180,18 @@ body {
   font-weight: 700;
   color: #697898;
 }
+.card__medium-sales {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
 
 .overview-tab {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 24px 14px 24px;
-  margin-bottom: 20px;
+  padding: 18px 24px 18px 24px;
+  margin-bottom: 8px;
 }
 .overview-tab__name {
   color: #697898;
@@ -237,6 +243,39 @@ body {
 }
 .activity__field-done {
   color: #697898;
+}
+
+.sales-section {
+  background-color: #5627FF;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.sales-section__info {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+.sales-section__info-numbers {
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.sales-section__info-description {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.graph {
+  background-image: url("../images/graph.svg");
+  width: 60%;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  align-self: center;
 }
 
 @media (max-width: 1310px) {

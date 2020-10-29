@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="306px" height="81px" viewBox="0 0 306 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graph</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1077.000000, -544.000000)">
+            <g id="graph" transform="translate(1077.000000, 547.000000)">
+                <polyline id="Path" stroke="#5627FF" stroke-width="3" points="3 31 33.1056338 0 57.9295775 45.5 86.9788732 57.5 104.408451 28.75 113.915493 45.5 136.626761 12 149.830986 39 175.711268 20.5 201.06338 31 210.042254 72 230.640845 12 254.408451 39 275.007042 12 303 39"></polyline>
+                <circle id="Oval" fill="#5627FF" cx="3" cy="31" r="3"></circle>
+                <circle id="Oval" fill="#5627FF" cx="303" cy="39" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

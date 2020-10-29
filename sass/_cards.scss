@@ -20,6 +20,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
+    overflow: hidden;
 
     &-title{
         font-weight: 700;
@@ -200,6 +201,12 @@
             font-weight: 700;
             color: #697898;
         }
+
+        &-sales{
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -207,8 +214,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 24px 14px 24px;
-    margin-bottom: 20px;
+    padding: 18px 24px 18px 24px;
+    margin-bottom: 8px;
 
     &__name{
         color: #697898;
@@ -272,6 +279,45 @@
             }
         
     }
+
+}
+
+.sales-section{
+    background-color: $main-color;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    &__info{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+
+        &-numbers{
+            color: white;
+            font-size: 16px;
+            font-weight: 900;
+            margin-bottom: 4px;
+        }
+
+        &-description{
+            color: rgba(255, 255, 255, 0.72);
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.graph{
+    background-image: url($image+"graph.svg");
+    width: 60%;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    align-self: center;
+    
+
 
 }
 
